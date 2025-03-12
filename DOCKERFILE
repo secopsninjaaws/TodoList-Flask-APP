@@ -1,7 +1,0 @@
-FROM python:3.9-slim
-WORKDIR /app
-COPY app.py /app/app.py
-# Se desejar, copie também um arquivo vazio ou existente de tasks.json para manter a persistência
-RUN pip install flask
-EXPOSE 5000
-CMD ["python", "app.py"]
